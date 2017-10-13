@@ -3,6 +3,8 @@
 This is a demo project to showcase how to use ComponentResolverFactory in Angular to create a grid
 like view.
 
+[Live demo](https://mfrancekovic.github.io/angular-dynamic-components-demo/)
+
 The idea is to avoid using *ngIf and have overbloated template which covers multiple grid items. But instead to define
 multiple templates as small components, style each one separately and then depending on the data set render the component
 which fits the grid item.
