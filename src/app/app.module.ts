@@ -10,12 +10,14 @@ import { CardStyle3Component } from './card-templates/card-style-3/card-style-3.
 import { CardStyle4Component } from './card-templates/card-style-4/card-style-4.component';
 import { CardStyle5Component } from './card-templates/card-style-5/card-style-5.component';
 import { CardStyle6Component } from './card-templates/card-style-6/card-style-6.component';
+import {CardTemplateBaseComponent} from './card-templates/card-template-base';
 
 @NgModule({
   declarations: [
     AppComponent,
     GridComponent,
     GridItemComponent,
+    CardTemplateBaseComponent,
     CardStyle1Component,
     CardStyle2Component,
     CardStyle3Component,

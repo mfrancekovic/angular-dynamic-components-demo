@@ -1,5 +1,5 @@
 import {Component, ComponentFactoryResolver, Input, OnInit, ViewChild, ViewContainerRef} from '@angular/core';
-import {CardTemplateBase} from './card-templates/card-template-base';
+import {CardTemplateBaseComponent} from './card-templates/card-template-base';
 import {CardStyle1Component} from './card-templates/card-style-1/card-style-1.component';
 import {CardStyle2Component} from './card-templates/card-style-2/card-style-2.component';
 import {CardStyle3Component} from './card-templates/card-style-3/card-style-3.component';
@@ -31,7 +31,7 @@ export class GridItemComponent implements OnInit {
     const viewContainerRef = this.container;
     viewContainerRef.clear();
     const componentRef = viewContainerRef.createComponent(componentFactory);
-    (<CardTemplateBase>componentRef.instance).data = this.data;
+    (<CardTemplateBaseComponent>componentRef.instance).data = this.data;
   }
   private getComponentForCardType(cardType) {
     return this.templateMapper[cardType];
